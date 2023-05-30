@@ -5,6 +5,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Module.h"
+#import <CoreGraphics/CoreGraphics.h>
 
 @protocol JSExport_Power <JSExport>
 

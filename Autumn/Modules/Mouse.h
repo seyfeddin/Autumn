@@ -6,6 +6,7 @@
 #import <Foundation/Foundation.h>
 #import "Module.h"
 #import "Point.h"
+@import CoreGraphics;
 
 @protocol JSExport_Mouse <JSExport>
 

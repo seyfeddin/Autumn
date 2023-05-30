@@ -4,6 +4,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <ApplicationServices/ApplicationServices.h>
 
 @protocol AccessibilityStatusObserver <NSObject>
 - (void) accessibilityStatusChanged:(BOOL)enabled;

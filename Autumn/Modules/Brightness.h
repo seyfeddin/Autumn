@@ -5,6 +5,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Module.h"
+#import <IOKit/graphics/IOGraphicsLib.h>
 
 @protocol JSExport_Brightness <JSExport>
 

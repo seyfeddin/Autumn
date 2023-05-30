@@ -68,6 +68,7 @@
 		94FDB7291FC34C09008F094F /* JS.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FDB7281FC34C09008F094F /* JS.m */; };
 		94FDB72C1FC4E1E0008F094F /* Hotkey.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FDB72B1FC4E1E0008F094F /* Hotkey.m */; };
 		94FDB72F1FC5AC11008F094F /* Keyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FDB72E1FC5AC11008F094F /* Keyboard.m */; };
+		BB4E00372A26816D00766689 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB4E00362A26816D00766689 /* IOKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -190,6 +191,7 @@
 		94FDB72B1FC4E1E0008F094F /* Hotkey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hotkey.m; sourceTree = "<group>"; };
 		94FDB72D1FC5AC11008F094F /* Keyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Keyboard.h; sourceTree = "<group>"; };
 		94FDB72E1FC5AC11008F094F /* Keyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Keyboard.m; sourceTree = "<group>"; };
+		BB4E00362A26816D00766689 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB4E00372A26816D00766689 /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +335,7 @@
 			children = (
 				9451F2CE1FBBE5130084A2FD /* Autumn */,
 				9451F2CD1FBBE5130084A2FD /* Products */,
+				BB4E00352A26816D00766689 /* Frameworks */,
 			);
 			indentWidth = 4;
 			sourceTree = "<group>";
@@ -374,6 +378,14 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		BB4E00352A26816D00766689 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB4E00362A26816D00766689 /* IOKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -383,7 +395,6 @@
 			buildPhases = (
 				9451F2C81FBBE5130084A2FD /* Sources */,
 				9451F2C91FBBE5130084A2FD /* Frameworks */,
-				94F25328214A31200060F433 /* Run Script */,
 				9451F2CA1FBBE5130084A2FD /* Resources */,
 				9486714121C99E7F00F6D424 /* CopyFiles */,
 			);
@@ -462,23 +473,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		94F25328214A31200060F433 /* Run Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Run Script";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "ruby ${SRCROOT}/gendocs.rb\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9451F2C81FBBE5130084A2FD /* Sources */ = {
